@@ -101,7 +101,9 @@ switch(TARGET) {
       parts.setupCSS(PATHS.style),
       parts.devServer({
         // Customize host/port here if needed
-        host: process.env.HOST,
+        //host: process.env.HOST,
+        host: process.env.C9_HOSTNAME, //'react1-alexrod.c9users.io',
+        https: false,
         port: process.env.PORT,
         poll: ENABLE_POLLING
       }),
